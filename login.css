@@ -12,24 +12,40 @@
   }
 }
 
- html {
+ /* html {
   zoom: 0.85;
   transform: scale(0.95);
+  zoom: 100%;
 
-} 
+}  */
 body {
   background: radial-gradient(#432a5a, #360249)  ;
 
 }
-.check{
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
+.finalcheck {
+  width: 900px;
+  position: fixed;
 }
+.check2{
+  float: right;
+  width:80px;
+  margin-top: 15px;
 
+}
+.check{
+  float: left;
+  margin-top: 200px;
+}
+.check3{
+  display: inline-block;
+  margin-left: 440px;
+  margin-top: 200px;
+  width:10px;
+}
 
 .logoimage {
   color: #e7c6f5;
+  position: fixed;
 }
 
 .userloginform{
@@ -40,10 +56,13 @@ body {
   height: 600px;
   width: 500px;
   /* margin: 30px; */
+  position: fixed;
 }
 .signuplinks {
   padding: 20px;
   margin-left: -40px;
+  display: flex;
+  position: fixed;
 }
 .signuplinks a {
   border-radius: 12px;
@@ -54,7 +73,6 @@ body {
   font-weight: bolder;
   font-style: inherit;
   font-size: 20px;
-  display: inline-block;
   padding: 20px;
   text-decoration: none;
   align-items: center;
@@ -98,6 +116,9 @@ h1 {
   font-style: inherit;
   font-size: 35px;
 }
+.loginheader{
+  position: fixed;
+}
 .loginheader .signupheader p {
   display: inline;
   padding: 10px 0px;
@@ -126,13 +147,15 @@ h1 {
   flex-wrap: nowrap;
   align-items: stretch;
   margin-left: -55px;
+  position: relative;
+  
 }
 
 .junior {
   /* max-width: 400px; */
   padding-left: 40px;
   display: block;
-  position: fixed;
+  position: absolute;
 }
 #juniorlink,
 #explorerlink,
@@ -187,10 +210,12 @@ h4 {
   font-size: 20px;
 }
 
-.userinput {
+.userinput,
+.parentinput {
   position: absolute;
   z-index: 10;
   /* margin-top: 50px; */
+  position: fixed;
 }
 
 #juniorloginbutton {
