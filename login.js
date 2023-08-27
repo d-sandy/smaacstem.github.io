@@ -42,6 +42,7 @@ var downloadTimer = setInterval(function(){//start  the countdown for 5 sec usin
   if(timeleft <= 0){
     clearInterval(downloadTimer); //stop  the countdown after 5 sec using clearInterval
     document.getElementById("countdown").style.display="none" //show and hide generated code 
+  }else{
     document.getElementById("countdown").style.display="block"
     document.getElementById("displaylogincode").innerHTML = randomNumber;		
     document.getElementById("timer").innerHTML = "0.0"+timeleft +"s";
@@ -49,21 +50,23 @@ var downloadTimer = setInterval(function(){//start  the countdown for 5 sec usin
   timeleft -= 1;
 }, 1000);
 }
+
+
 // For Parent
 function randomlogincodeparent() {
   parentrandomNumber=Math.floor(Math.random() * 1000000) + 1;
   // prompt(parentrandomNumber)
-  var timeleft = 5;
-  var downloadTimer = setInterval(function(){
-    if(timeleft <= 0){
-      clearInterval(downloadTimer);
+  var timeleftparent = 5;
+  var downloadTimerparent = setInterval(function(){
+    if(timeleftparent <= 0){
+      clearInterval(downloadTimerparent);
       document.getElementById("parentcountdown").style.display="none"
     } else {
       document.getElementById("parentcountdown").style.display="block"
       document.getElementById("parentdisplaylogincode").innerHTML = parentrandomNumber;		
-      document.getElementById("parenttimer").innerHTML = "0.0"+timeleft +"s";
+      document.getElementById("parenttimer").innerHTML = "0.0"+timeleftparent +"s";
     }
-    timeleft -= 1;
+    timeleftparent -= 1;
   }, 1000);
   }
   
