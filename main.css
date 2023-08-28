@@ -1,0 +1,553 @@
+/*Save it as main.css  */
+
+/* Sandhiya - Device Screen view */
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	html {
+		font-size: 12px;
+	}
+}
+body{
+	background-color: #d5e7f2c2;
+}
+/*Sandhiya- Navigation bar containing logo and search */
+.logoimage {
+	float: left;
+	margin-bottom: -30px;
+	margin-top: -30px;
+	margin-right: 45px;
+    width: 150px;  
+	height: 90px; 
+}
+.topnav {
+	padding: 5px;
+	background-color: white;
+	display: inline-flex;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+}
+.topnav a {
+	color: red;
+	text-align: center;
+	padding: 30px 20px 30px 20px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+/* dont know how to set commented lines without increasing nav bar height */
+.topnav a:hover {
+	color: rgb(11, 158, 11);
+	transform: scale(1.2);
+}
+
+#loginsignupbutton {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 30px;
+	border: none;
+	border-radius: 13px;
+	background: #020280;
+	color: white;
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+#loginsignupbutton:hover {
+	background-color: red;
+}
+
+.topnav .searchicon button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: -5px;
+	margin-right: 50px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	display: flex;
+}
+.topnav .searchicon input {
+	padding: 15px;
+	margin-top: -5px;
+	margin-left: 65px;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	position: fixed;
+	width: 230px;
+}
+.topnav .searchicon {
+	float: right;
+	margin-top: 20px;
+	margin-right: 140px;
+}
+
+/*Camelia- Banner with heading, paragraph, image and call to action button */
+.banner {
+	background-color: #020280;
+	text-align: center;
+	padding: 30px 20px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+    margin-top: 120px;
+}
+.banner h1 {
+	flex: 1;
+	text-align: center;
+	color: white;
+	margin-bottom: 10px;
+	font-size: 30px;
+	font-family: "Oswald", sans-serif;
+}
+.banner p {
+	flex: 1;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+}
+
+.cta-button {
+	display: inline-block;
+	background-color: #e74c3c;
+	color: #ffffff;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.cta-button:hover {
+	background-color: #fac917;
+}
+/* Camelia- Styles for sign up form */
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-content {
+	background-color: #fff9ed;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	font-family: "Rubik", sans-serif;
+	font-size: 14px;
+	margin-top: 70px;
+}
+.input-container {
+	text-align: center;
+	margin-bottom: 15px;
+}
+input[type="text"],
+input[type="password"] {
+	width: 60%;
+	padding: 10px;
+	margin: 5px 0;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	background: #f1f1f1;
+}
+.modal-buttons {
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.modal-buttons button {
+	margin: 0 10px;
+	background-color: #bac5e8;
+	font-family: "Rubik", sans-serif;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+/* Camelia- Intro to STEM frames, border */
+.border {
+	width: auto;
+	margin: 40px auto;
+	text-align: center;
+	padding: 40px 20px;
+	background-color: #fff9ed;
+	border-radius: 50px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.border h2 {
+	text-align: center;
+	font-family: "Oswald", sans-serif;
+	font-size: 25px;
+}
+
+/* Camelia- Styles for the category section */
+.categs {
+	padding: 30px 0px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.categ {
+	flex: 1;
+	padding: 10px;
+	margin: 10px;
+	height: 200px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.categ h3 {
+	font-size: 20px;
+	color: black;
+	font-family: "Oswald", sans-serif;
+	margin-bottom: 10px;
+}
+.categ p {
+	font-size: 16px;
+	color: black;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+}
+
+/* Camelia- Background colors for each topic */
+.categ.Science {
+	background-color: #09e836;
+}
+.categ.Tech {
+	background-color: #53ede0;
+}
+.categ.Engineer {
+	background-color: #f57622;
+}
+.categ.Math {
+	background-color: #d930a9;
+}
+
+/* Camelia- Image added to each frame, visible on hover */
+.categ-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+.categ:hover .categ-img {
+	opacity: 0;
+}
+
+/*Sandhiya -style for event section  */
+.eventsheader {
+	text-align: center;
+	color: black;
+	padding: 30px 40px 10px 40px;
+	font-family: "Oswald", sans-serif;
+	font-size: 17px;
+    
+}
+.card {
+	display: flex;
+}
+.cardrow {
+	margin-top: 10px;
+	margin-left: 45px;
+	padding: 20px;
+	width: 100%;
+	/* font-size: 1.2em; */
+	line-height: 1.5;
+	border-radius: 10px;
+	color: black;
+	animation: 3s anim ease-in-out infinite alternate;
+	cursor: pointer;
+	font-size: 15px;
+	text-align: center;
+}
+.cardrow h3 {
+	font-weight: bolder;
+	font-family: "Oswald", sans-serif;
+	font-size: 22px;
+}
+.cardrow p {
+	font-weight: bolder;
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+}
+/* Camelia- Added link button- and increse size on hover */
+.link1-button {
+	display: inline-block;
+	background-color: rgba(56, 237, 89, 0.808);
+	color: #1d1616;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.link1-button:hover {
+	transform: scale(1.1);
+}
+.CFG-button {
+	display: inline-block;
+	background-color: #e214f3;
+	color: #1d1616;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.CFG-button:hover {
+	transform: scale(1.1);
+}
+.link2-button {
+	display: inline-block;
+	background-color: rgb(226, 226, 48);
+	color: #1d1616;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.link2-button:hover {
+	transform: scale(1.1);
+}
+
+/*Sandhiya- Keyframes to control the animation movement */
+@keyframes anim {
+	0% {
+		/* Rotate the card for 3 degrees */
+		transform: rotate(3deg);
+		left: 0;
+		top: 0;
+		transform-origin: left;
+	}
+}
+/* Sandhiya- Background images for each event cards */
+#card1 {
+	background-color: rgba(220, 74, 101, 0.192);
+}
+#card2 {
+	background-color: rgba(20, 243, 57, 0.192);
+}
+#card3 {
+	background-color: rgba(35, 48, 231, 0.192);
+}
+
+/* Ana - container community */
+.community {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	border-radius: 50px;
+	background-color: #fff9ed;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	margin: 40px auto;
+	text-align: center;
+	padding: 40px 20px;
+}
+
+/* Ana- h2 community */
+.h2-community {
+	color: black;
+	text-align: center;
+	font-family: "Oswald", sans-serif;
+	font-size: 25px;
+}
+
+/* Ana- buttons community */
+.cbtn {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	padding-bottom: 40px;
+	padding-top: 30px;
+}
+.cbtn1,
+.cbtn2,
+.cbtn3 {
+	width: 297px;
+	height: 133px;
+	border-radius: 51px;
+	border: 1px solid #000;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	font-family: "Oswald", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: black;
+	transition: all 0.3s linear;
+}
+
+.cbtn1 {
+	background: #9fe2f4c2;
+}
+.cbtn2 {
+	background: #bac5e8;
+}
+.cbtn3 {
+	height: 130px; /* Adjusted height for consistency */
+	background: #f2dbc5;
+}
+.cbtn1:hover,
+.cbtn2:hover,
+.cbtn3:hover {
+	background-color: #fffcfa;
+	cursor: pointer;
+}
+
+/*Anh - Footer */
+* {
+	box-sizing: border-box;
+}
+footer {
+	width: 100%;
+	height: 300px;
+	background-color: white;
+	border-top: 1px solid lightgrey;
+}
+footer img {
+	padding-left: 50px;
+	width: 100%;
+}
+.columns {
+	display: flex;
+	justify-content: space-between;
+}
+.column {
+	flex: 1; /* Each of the first four columns takes 30% */
+}
+
+.column:last-child {
+	flex: 1.3; /* The last column takes 39% (30% + 10%) */
+}
+
+#company-info {
+	list-style-type: none;
+	font-family: "Rubik", sans-serif;
+	width: 200px;
+	font-size: 14px;
+}
+#company-info li {
+	padding: 10px;
+	font-weight: 14px;
+}
+.social-media {
+	list-style-type: none;
+	display: flex;
+}
+.social-media li {
+	padding: 15px 19px;
+}
+.footer-links {
+	list-style-type: none;
+	padding-left: 20px;
+	width: 200px;
+}
+.social-media li a i {
+	color: #0244b6;
+	transition: 0.3s;
+}
+.social-media li a i:hover {
+	color: black;
+	transform: translateY(-3px);
+}
+.footer-links li {
+	padding: 10px 10px 23px 10px;
+}
+.footer-links li a:hover {
+	color: blue;
+}
+footer a {
+	text-decoration: none;
+	color: black;
+	font-family: "Rubik", sans-serif;
+	font-size: 14px;
+}
+.newsletter{
+	margin-left: 5px;
+	margin-bottom: 50px;
+}
+
+.newsletter p {
+	margin-top: 30px;
+	width: 80%;
+	font-size: 14px;
+}
+.newsletter form input[type="email"]{
+	width: 60%;
+	padding: 10px;
+	border-color: #094771;
+	font-family: "Rubik", sans-serif;
+	font-size: 12px;
+}
+
+.newsletter form button[type="submit"]{
+	padding: 10px;
+	width: 80px;
+	background-color: #0a55d6;
+	color: white;
+	transition: 0.6s;
+	font-size: 12px;
+}
+.newsletter form button[type="submit"]:hover{
+	background-color: black;
+}
+
+.footer-end {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Rubik', sans-serif;
+	font-size: 15px;
+	border-top: 1px solid lightgrey;
+	padding: 5px 20px;
+	margin-top: 40px;
+  }
+  
+  .footer-end p a {
+	font-size: 15px;
+  }

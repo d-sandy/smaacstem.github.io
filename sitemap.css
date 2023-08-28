@@ -1,0 +1,69 @@
+/* save as sitemap.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  /* sitemap.html */
+  
+  .sitemap-title {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin-left: 50px;
+  }
+  
+  .sitemap-title-backdrop {
+    background-color: navy;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  
+  .sitemap-audience, .sitemap-info, .sitemap-legal {
+    list-style-type: none;
+  }
+  
+  
+  .sitemap-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 250px;
+  }
+  
+  .sitemap-columns li {
+    padding: 20px;
+  }
+  
+  .sitemap-columns li a {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .sitemap-columns li a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .sitemap-col-title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: navy;
+  }
+  
+  .sitemap-audience hr, .sitemap-info hr, .sitemap-legal hr {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100%;
+  }
+  
+  /* phone media query for sitemap */
+  @media screen and (max-width: 768px) {
+    .sitemap-columns {
+      flex-direction: column;  
+    }
+  }

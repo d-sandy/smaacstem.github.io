@@ -1,0 +1,168 @@
+<!--save as blog.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAACStem Blog&News</title>
+    <meta name="description" content="Blog and news page.">
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <script src="script.js" defer></script>
+
+<!--Code by Sandhiya-->
+    <!-- to show logo icon in website browser tab(run this in is Vs code to see) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+
+<!--Code by Camelia-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    </style>
+
+<!--Code by Anh--Footer fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://kit.fontawesome.com/1b7c9c4617.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--Sandhiya- Logo and navigation bar-->
+	<!-- Sandhiya- Navigation bar -->
+	<div class="topnav">
+		<a href="index.html"> <img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Home" width="190" height="100" class="logoimage"></a>
+		<a href="about.html">About us</a>
+		<a href="junior.html">Junior Explorers</a>
+		<a href="explorers.html">Explorers</a>
+		<a href="parents.html">Parents</a>
+		<button id="loginsignupbutton" onclick="window.location.href='login.html'">Login</button>
+		<!-- HTML for search icon in Nav section. Added the search icon image within button element to make search icon an actual search button. -->
+		<div class="searchicon">
+			<!-- search bar - a hidden container -->
+			<input type="text" placeholder="Enter the text here" id="searchtext" class="searchbar" style="display: none;">
+			<!-- search button -->
+			<button id="searchbutton" onclick="hideshow()"><img class="searchiconimg" src="search.png" alt="search" width="45"></button>
+		</div>
+	</div>
+
+<!--Code by Megan-->
+<body>
+    <h1> Blog and News </h1>
+
+<div class="blog">
+<h2 class="title">Blog</h2>
+  <p class="intro"> A weekly blog with interesting interviews and reports of STEM events. </p>
+  <div class="posts">
+  <div class="post one">
+    <h4 class="blogname">A chat with our founders</h4>
+    <img class="blogimage" src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80">
+    <p class="date"> 21st August 2023 </p>
+     <p class="intro"> This week we were lucky enough to have a quick interview with the SMAAC STEM founders about upcoming updates to... <a href="">Continue reading</a></p>
+  </div>
+  <div class="post two">
+    <h4 class="blogname">Coding the future: An interview with our most recent Explorer competition winners!</h4>
+    <img class="blogimage" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2938&q=80">
+    <p class="date">14th August 2023 </p>
+     <p> Last week, we held our final for the coding competition where we invited Explorers to code...<a href="">Continue reading</a></p>
+  </div>
+  <div class="post three">
+    <h4 class="blogname">Parents: Great STEM activities in August </h4>
+<img class="blogimage" src="https://media.istockphoto.com/id/469951129/photo/group-of-multi-ethnic-students-in-chemistry-lab.jpg?s=612x612&w=0&k=20&c=WbKS_5P0HrNGWXTmNifwjh6Dw0mzj_spghkbJYd9xnY=">
+    <p class="date">7th August 2023</p>
+  <p>We have compiled a great list of activities to take your Junior Explorers to in August around the UK... <a href="">Continue reading</a>
+  </div>
+  </div>
+</div>
+<div class="news">
+  <h2 class="title">Latest News</h2>
+  <p>Here we compile the latest news in the STEM space we think appeals to you!</p>
+  <div class="posts">
+  <div class="article a">
+    <h4>Breaking sterotypes: The women leading the charge in STEM careers.</h4>
+    <p><a href="https://www.bbc.co.uk/bitesize/articles/zm9cvk7">Read more...</a></p>
+  </div>
+  <div class="article b">
+  <h4>International Women in Engineering: "It's an exciting time to join the profession."</h4>
+  <p><a href="https://www.bbc.co.uk/bitesize/articles/z2y26g8">Read more...</a></p>
+  </div>
+  <div class="article c">
+    <h4>Working in healthcare and science: Q&A panel with Dr Alex George.</h4>
+    <p><a href="https://www.bbc.co.uk/bitesize/articles/zbhc4xs#zrydwnb">Read more...</a></p>
+  </div>
+  <div class="article d">
+    <h4>Pig kidneys demonstrate "life-sustaining kidney function" in a human-study</h4>
+<p><a href="https://www.independent.co.uk/news/science/jim-parsons-fda-b2394132.html">Read more...</a></p>
+  </div>
+  <div class="article e">
+    <h4>Google may soon roll out AI "personal life coach"</h4>
+    <p><a href="https://www.independent.co.uk/tech/google-ai-personal-life-coach-b2395145.html">Read more...</a></p>
+  </div>
+</div>
+</div>
+
+</body>
+
+<!--Anh- Create a footer containing columns and quick access links-->
+<footer>
+	<div class="columns">
+		<div class="column">
+			<!-- Insert logo -->
+			<img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Logo">
+			<!-- Social media icons -->
+			<ul class="social-media">
+				<li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+				<li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+				<li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
+				<li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+			</ul>
+		</div>
+
+		<!-- Company details -->
+		<div class="column">
+			<ul id="company-info">
+				<li>SMAACStem</li><br>
+				<li>Worldwide Organisation - Igniting Curiosity, Fueling Futures: Empowering Youth Through STEM Exploration</li>
+			</ul>
+		</div>
+
+		<!-- Easy access links -->
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="support.html">Support</a></li>  
+                <li><a href="faq.html">FAQ & Contact</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Settings</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="about.html">About us</a></li>
+				<li><a href="forum.html">Forum</a></li>
+                <li><a href="blog.html">Blogs & News</a></li>
+                <li><a href="search.html">Search</a></li>
+			</ul>
+		</div>
+
+		<!-- Newsletter and search -->
+		<div class="column">
+			<div class="newsletter">
+				<p>Sign up to our newsletter to get the latest STEM updates!</p>
+				<form action="https://formsubmit.co/hiannnguyen@gmail.com" method="POST">
+					<input type="email" name="email" placeholder="Email address" required>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-end">
+		<p>© 2023 SMAACStem Global. All rights reserved.</p>
+		<p><a href="sitemap.html">Sitemap</a></p>
+	  </div>
+</footer>
+    
+</html>

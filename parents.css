@@ -1,0 +1,199 @@
+/*Save it as parents.css  */
+
+@media screen and (max-width: 600px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    html {
+      font-size: 12px;
+    }
+  }
+/* Styling for title */
+.title{
+    margin-top: 120px;
+}
+.content1 {
+    background-color: #fff9ed;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    color:#030396;
+}
+
+.title p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+
+/* Styling for inspire section */
+.inspire {
+    text-align: center;
+    margin: 20px 0;
+}
+.inspire h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin: 10px auto;
+    padding: 15px 5px;
+    color:#030396;
+}
+
+.inspire p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Styling for boxes */
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.inspire-box {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px 40px;
+}
+
+.inspire-box h4 {
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inspire-box p {
+    margin: 40px auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.inspire-box a {
+    background-color: #020280;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+.inspire-box a:hover {
+    transform: scale(1.2);
+
+}
+#box1{
+    background-color: rgb(165, 241, 165);
+}
+#box2{
+    background-color: rgb(249, 249, 166);
+}
+#box3{
+    background-color: rgb(248, 200, 208);
+}
+
+.content2 {
+    background-color: #fff9ed;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.guide {
+    text-align: center;
+    margin: 20px 0;
+}
+.guide h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin: 10px auto;
+    padding: 15px 5px;
+    color:#030396;
+}
+
+.guide p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Styling for boxes */
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.guide-box {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+    border-radius: 40px 10px;
+}
+
+.guide-box h4 {
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.guide-box p {
+    margin: 40px auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.guide-box a {
+    background-color: #020280;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+
+}
+.guide-box a:hover {
+    transform: scale(1.1);
+}
+#boxa{
+    background-color: #f9caab;
+}
+#boxb{
+    background-color: #91ebe3;
+}
+#boxc{
+    background-color: rgb(194, 159, 227);
+}

@@ -1,0 +1,169 @@
+<!--save as faq.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAACStem Faq&contact</title>
+    <meta name="description" content="FAQ and contact form page">
+    <link rel="stylesheet" type="text/css" href="faq.css">
+    <script src="script.js" defer></script>
+
+<!--Coded by Sandhiya-->
+    <!-- to show logo icon in website browser tab(run this in is Vs code to see) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+
+<!--Coded by Camelia-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    </style>
+
+<!--Coded by Anh-->
+    <!--Footer fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://kit.fontawesome.com/1b7c9c4617.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--Coded by Sandhiya-->
+	<!-- Sandhiya- Navigation bar -->
+	<div class="topnav">
+		<a href="index.html"> <img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Home" width="190" height="100" class="logoimage"></a>
+		<a href="about.html">About us</a>
+		<a href="junior.html">Junior Explorers</a>
+		<a href="explorers.html">Explorers</a>
+		<a href="parents.html">Parents</a>
+		<button id="loginsignupbutton" onclick="window.location.href='login.html'">Login</button>
+		<!-- HTML for search icon in Nav section. Added the search icon image within button element to make search icon an actual search button. -->
+		<div class="searchicon">
+			<!-- search bar - a hidden container -->
+			<input type="text" placeholder="Enter the text here" id="searchtext" class="searchbar" style="display: none;">
+			<!-- search button -->
+			<button id="searchbutton" onclick="hideshow()"><img class="searchiconimg" src="search.png" alt="search" width="45"></button>
+		</div>
+	</div>
+
+<body>
+<!--Coded by Megan - FAQ and Contact form page-->
+  <h1>FAQ and Contact Us</h1>
+
+<div class="FAQs">
+  <h2>FAQ</h2>
+  <div class="QA">
+    <h3 class="question">How can I change my email address?</h3>
+    <p class="answer">Click on your account, under account settings click "update my settings". In this section you will find multiple options to change your account, including your email address.</p>
+  </div>
+
+  <div class="QA">
+    <h3 class="question">How do I delete my account?</h3>
+    <p class="answer">In your account settings, click the "delete this account" button, you will be required to fill in your password. Following this, there will be seven days where you can log into your account to recover it before it will be deleted permanently.</p>
+  </div>
+
+  <div class="QA">
+  <h3 class="question">How can I convert my account from junior explorer to explorer?</h3>
+  <p class="answer">In your account settings you can choose the option "convert my account". You will need to confirm your date of birth and parents email, an email will be sent to your parents' account, where they will confirm. Following this, your account will be updated within 48 hours.</p>
+  </div>
+
+  <div class="QA">
+  <h3 class="question">How can I save pages I'm interested in?</h3>
+  <p class="answer">Whenever you would like to save a page, you can click the heart icon to "favourite" the page or the bookmark icon to bookmark it. These will then be available in your favourites or bookmark sections.</p>
+  </div>
+</div>
+
+<!--Contact form-->
+<div class="contact">
+  <h2>Contact Us</h2>
+  <h3>Couldn't find what you were looking for?<br>Please fill out the form below</h3>
+  <form>
+    <label for="userame">Enter your username:<br><input id="username" name="username" type="text" required></label><br>
+    <label for="email">Enter your email:<br><input id="email" name="email" type="email" required></label>
+    <label for="account-type"><input id="account-type" type="radio" name="account-type" class="account-type">Junior Explorer</label>
+    <label for="account-type"><input id="account-type" type="radio" name="account-type" class="account-type">Explorer</label>
+    <label for="account-type"><input id="account-type" type="radio" name="account-type" class="account-type">Parent</label><br>
+    <label for="enquiry">Please enter your enquiry: <br> <textarea id="enquiry" name="enquiry" rows="3" cols="30" placeholder="I am enquiring about..."></textarea></label><br>
+      <Input type="submit" value="Submit">
+  </form>
+</div>
+<!--Javascript script-->
+      <script>
+        let answers = document.querySelectorAll(".QA");
+        answers.forEach((event) => {
+          event.addEventListener("click", () => {
+            if (event.classList.contains("active")) {
+              event.classList.remove("active");
+            } else {
+              event.classList.add("active");
+            }
+          });
+        });
+      </script>
+</body>
+
+
+<!--Anh- Create a footer containing columns and quick access links-->
+<footer>
+	<div class="columns">
+		<div class="column">
+			<!-- Insert logo -->
+			<img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Logo">
+			<!-- Social media icons -->
+			<ul class="social-media">
+				<li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+				<li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+				<li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
+				<li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+			</ul>
+		</div>
+
+		<!-- Company details -->
+		<div class="column">
+			<ul id="company-info">
+				<li>SMAACStem</li><br>
+				<li>Worldwide Organisation - Igniting Curiosity, Fueling Futures: Empowering Youth Through STEM Exploration</li>
+			</ul>
+		</div>
+
+		<!-- Easy access links -->
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="support.html">Support</a></li>  
+                <li><a href="faq.html">FAQ & Contact</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Settings</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="about.html">About us</a></li>
+				<li><a href="forum.html">Forum</a></li>
+                <li><a href="blog.html">Blogs & News</a></li>
+                <li><a href="search.html">Search</a></li>
+			</ul>
+		</div>
+
+		<!-- Newsletter and search -->
+		<div class="column">
+			<div class="newsletter">
+				<p>Sign up to our newsletter to get the latest STEM updates!</p>
+				<form action="https://formsubmit.co/hiannnguyen@gmail.com" method="POST">
+					<input type="email" name="email" placeholder="Email address" required>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-end">
+		<p>© 2023 SMAACStem Global. All rights reserved.</p>
+		<p><a href="sitemap.html">Sitemap</a></p>
+	  </div>
+</footer>
+    
+</html>

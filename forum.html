@@ -1,0 +1,178 @@
+<!--save as forum.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAACStem Forum</title>
+    <meta name="description" content="Mock discussion forum page.">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <script src="script.js" defer></script>
+
+<!--Coded by Sandhiya-->
+    <!-- to show logo icon in website browser tab(run this in is Vs code to see) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+
+<!--Coded by Camelia-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    </style>
+
+<!--Coded by Anh-->
+    <!--Footer fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://kit.fontawesome.com/1b7c9c4617.js" crossorigin="anonymous"></script>
+
+<!--Coded by Camelia styles for forum-->
+    <style>
+        .forum-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .forum-section h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .forum-post {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .forum-post h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .forum-post p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .create-post-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+<!--Sandhiya- Logo and navigation bar-->
+	<!-- Sandhiya- Navigation bar -->
+	<div class="topnav">
+		<a href="index.html"> <img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Home" width="190" height="100" class="logoimage"></a>
+		<a href="about.html">About us</a>
+		<a href="junior.html">Junior Explorers</a>
+		<a href="explorers.html">Explorers</a>
+		<a href="parents.html">Parents</a>
+		<button id="loginsignupbutton" onclick="window.location.href='login.html'">Login</button>
+		<!-- HTML for search icon in Nav section. Added the search icon image within button element to make search icon an actual search button. -->
+		<div class="searchicon">
+			<!-- search bar - a hidden container -->
+			<input type="text" placeholder="Enter the text here" id="searchtext" class="searchbar" style="display: none;">
+			<!-- search button -->
+			<button id="searchbutton" onclick="hideshow()"><img class="searchiconimg" src="search.png" alt="search" width="45"></button>
+		</div>
+	</div>
+
+<!-- Coded by Camelia- Discussion Forum Sections -->
+<section class="forum-section">
+    <h2>Discussion Forum</h2>
+    <div class="forum-posts">        
+        <div class="forum-post">
+            <h3>Topic: Homework Help</h3>
+            <p>A simple reminder to all: this is the "Homework Help" forum, not the "Homework Answers" forum.</p>
+            <p>Posted by: SciFiSage</p>
+        </div>
+        
+        <div class="forum-post">
+            <h3>Topic: Coding Challenges</h3>
+            <p>Share your favorite coding challenges and resources.</p>
+            <p>Posted by: Labsy Doodles</p>
+
+        </div>
+    </div>
+
+    <!-- Create New Post Button -->
+    <a href="#" class="create-post-button">Create New Post</a>
+            
+</section>
+</body>
+
+<!--Anh- Create a footer containing columns and quick access links-->
+<footer>
+	<div class="columns">
+		<div class="column">
+			<!-- Insert logo -->
+			<img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Logo">
+			<!-- Social media icons -->
+			<ul class="social-media">
+				<li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+				<li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+				<li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
+				<li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+			</ul>
+		</div>
+
+		<!-- Company details -->
+		<div class="column">
+			<ul id="company-info">
+				<li>SMAACStem</li><br>
+				<li>Worldwide Organisation - Igniting Curiosity, Fueling Futures: Empowering Youth Through STEM Exploration</li>
+			</ul>
+		</div>
+
+		<!-- Easy access links -->
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="support.html">Support</a></li>  
+                <li><a href="faq.html">FAQ & Contact</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Settings</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="about.html">About us</a></li>
+				<li><a href="forum.html">Forum</a></li>
+                <li><a href="blog.html">Blogs & News</a></li>
+                <li><a href="search.html">Search</a></li>
+			</ul>
+		</div>
+
+		<!-- Newsletter and search -->
+		<div class="column">
+			<div class="newsletter">
+				<p>Sign up to our newsletter to get the latest STEM updates!</p>
+				<form action="https://formsubmit.co/hiannnguyen@gmail.com" method="POST">
+					<input type="email" name="email" placeholder="Email address" required>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-end">
+		<p>© 2023 SMAACStem Global. All rights reserved.</p>
+		<p><a href="sitemap.html">Sitemap</a></p>
+	  </div>
+</footer>
+    
+
+</html>

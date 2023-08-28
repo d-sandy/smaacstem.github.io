@@ -1,0 +1,133 @@
+<!-- save as signup.html -->
+<!-- Code by Camelia- css and JS included -->
+<!-- Sign up page linked with login page, upon cancelling it returns to homepage -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAACStem Sign Up</title>
+    <meta name="description" content="Sign up page for new users">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(#400953,#83679c);
+            font-family: "Rubik", sans-serif;
+        }
+
+        .signup-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-form {
+            background-color: #fff9ed;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-size: 14px;
+            width: 300px;
+        }
+
+        .input-container {
+            text-align: center;
+            margin-bottom: 15px;
+            font-family: "Rubik", sans-serif;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        .signup-buttons {
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .signup-buttons button {
+            margin: 0 10px;
+            background-color: #bac5e8;
+            font-family: "Rubik", sans-serif;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-container">
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <form action="post">
+                <div class="input-container">
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" placeholder="Enter Email" name="email" id="name">
+                </div>
+
+                <div class="input-container">
+                    <label for="password"><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" name="password" id="password">
+                </div>
+
+                <label>
+					<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				</label>
+
+				<p>By creating an account you agree to our <a href="privacy.html" style="color:dodgerblue">Privacy settings</a>.</p>
+
+                <div class="signup-buttons">
+                    <button type="submit" onclick="auth(event)">Sign Up</button>
+                    <button type="reset" onclick="goToHomePage()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const openSignupLink = document.getElementById('openSignup');
+        const signupForm = document.getElementById('signupForm');
+        var form = document.forms["signup-form"];
+        var formFields = form.getElementsByTagName("input");
+
+        openSignupLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the link from navigating
+
+            if (signupForm.style.display === 'none' || signupForm.style.display === '') {
+                signupForm.style.display = 'block';
+            } else {
+                signupForm.style.display = 'none';
+            }
+        });
+
+        function goToHomePage() {
+            window.location.href = "index.html"; // Change "homepage.html" to your actual homepage URL
+        }
+        function auth(event) {
+          event.preventDefault();
+
+          var email = document.getElementById("name").value;
+          var password = document.getElementById("password").value;
+
+          if (email != "" && password !="") {
+               window.location.replace("index.html");
+          } else {
+              alert("Invalid information");
+              return;
+          }
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+/*Save it as faq.css  */
+
+@media screen and (max-width: 600px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+  /*Code by Megan*/
+  h1 {
+  text-align:center;
+  flex: 1;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 120px;
+  }
+  h2 {
+    font-family:'Oswald', sans-serif;
+    font-size:30px;
+    text-align:center;
+    width:auto;
+  }
+  
+  .FAQs {
+    background-color: #020280;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .question {
+    font-size:20px;
+  }
+  
+  .QA:hover {
+    cursor: pointer;
+  }
+  .answer {
+    display: none;
+  }
+  .QA.active .answer {
+    display: block;
+  }
+  
+  /* .contact {
+    background-color: #fff9ed;
+    color:black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  
+  form {
+    border-radius:50px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .label {
+  padding:10px; 
+  margin-bottom:100px;
+  } */
+  
+  /* Camelia- updated contact form */
+  .contact {
+    background-color: #fff9ed;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .contact h2 {
+    font-family:'Oswald', sans-serif;
+    font-size:30px;
+    text-align:center;
+    width:auto;
+  }
+  
+  form {
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #ddd;
+  }
+  
+  .form-radio {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #1a07c5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: black;
+  }
+  

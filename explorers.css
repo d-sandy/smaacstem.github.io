@@ -1,0 +1,287 @@
+/*Save it as explorers.css  */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Banner */
+.bannerexp {
+    width: auto;
+    height: 73px;
+    background-color: #4ba46e;
+    margin-top: 130px;
+}
+
+.banh1 {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-top: 5px;
+    color: #fff;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.43;
+}
+/* Buttons and filters */
+.dashexpl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.bticon{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background: #2f724a;
+    margin-top: 3%;
+    color: white;
+    cursor: pointer;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bticon:hover{
+    background-color: #f57622;
+}
+.btnotes,
+.btnfav{
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: #4ba46e;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 3%;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Drop down button and content */
+.dropbtn {
+    background-color: #4ba46e;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 14%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 230px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(248, 248, 171);
+    min-width: 100px;
+    text-align: left;
+    padding: 10px;
+    right: 0;
+    left: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(219, 219, 81);
+}
+
+.show {
+    display: block;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .btnotes:hover,
+.btnfav:hover,.dropbtn:focus {
+    transform: scale(1.1);
+}
+
+/* The search field */
+/* #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+} */
+
+/* The search field when it gets focus/clicked on */
+/* #myInput:focus {
+    outline: 3px solid #ddd;
+} */
+/* The search field */
+#myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    padding: 12px 20px 12px 40px; 
+    border-radius: 10px;
+    border: 1px solid #ccc; 
+    width: 90%; 
+    margin-bottom: 10px;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {
+    outline: 3px solid #ddd;
+    border-color: #ddd;
+    background-color: #f8f8ab;
+}
+
+.breakblue {
+    width: auto;
+    height: 30px;
+    background-color: #1a07c5;
+}
+
+.h2exp {
+    color: black;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    text-align: center;
+}
+/* Cards */
+/* Flex layout for rows */
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px 5%;
+    gap: 5px;
+} */
+.column {
+    flex: 1;
+    max-width: 250px;/* add left margin */
+}
+/* Style the counter cards */
+.cardexp {
+    text-align: center;
+    /* border:solid #ccc; */
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    margin-left: 55px;
+    justify-content: space-between;
+    display: flex;
+}
+.card {
+    margin: 10px;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.card-img-top {
+    width: 200px;
+    height: 200px;
+}
+.card-body {
+    padding: 20px;
+    flex-grow: 1;/* Allow the card content to stretch to fill the card */
+    padding: 10px;
+}
+
+/* .card-caption {
+    position: absolute;
+    top: 65%;
+    left: 20px;
+    right: 5px;
+    color: white;
+    text-align: left;
+    font-family: "Jua", sans-serif;
+    text-shadow: 1px 1px black;
+    font-size: 20px;
+    z-index: 2;
+} */
+.iconleft {
+    text-align: right;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.fa-heart {
+    font-size: 36px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fa-heart.red {
+    color: red !important;
+}
+
+.fa-heart.blue {
+    color: lightblue !important;
+}
+
+
+/* h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    font-size: 1rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 0 0 calc(50% - 20px);
+    }
+}

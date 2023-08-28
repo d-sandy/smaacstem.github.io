@@ -1,0 +1,536 @@
+<!--save as junior.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAACStem</title>
+    <meta name="description" content="Page dedicated to young people.">
+    <link rel="stylesheet" type="text/css" href="junior.css">
+    <script src="script.js" defer></script>
+
+<!--Coded by Sandhiya-->
+    <!-- to show logo icon in website browser tab(run this in is Vs code to see) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+
+<!--Coded by Anh-->
+    <!--Footer fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://kit.fontawesome.com/1b7c9c4617.js" crossorigin="anonymous"></script>
+    <!-- html declaration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+<!--Coded by Sandhiya-->
+<!--Sandhiya- Logo and navigation bar-->
+	<!-- Sandhiya- Navigation bar -->
+	<div class="topnav">
+		<a href="index.html"> <img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Home" width="190" height="100" class="logoimage"></a>
+		<a href="index.html">About us</a>
+		<a href="junior.html">Junior Explorers</a>
+		<a href="explorers.html">Explorers</a>
+		<a href="parents.html">Parents</a>
+		<button id="loginsignupbutton" onclick="window.location.href='login.html'">Login</button>
+		<!-- HTML for search icon in Nav section. Added the search icon image within button element to make search icon an actual search button. -->
+		<div class="searchicon">
+			<!-- search bar - a hidden container -->
+			<input type="text" placeholder="Enter the text here" id="searchtext" class="searchbar" style="display: none;">
+			<!-- search button -->
+			<button id="searchbutton" onclick="hideshow()"><img class="searchiconimg" src="search.png" alt="search" width="45"></button>
+		</div>
+	</div>
+
+<!--Coded by Anh-->
+<!-- header/nav bar -->
+<!-- banner/cards filter -->
+<div class="banner-junior">
+      
+    <div class="banner-row-one">
+
+        <div class="card" id="juniorExplorers">
+            <img src="https://pbs.twimg.com/media/F30XbWyWwAER0tR?format=png&name=small" alt="junior explorers title">
+        </div> 
+
+        <div class="card">
+            <a href="#quizzes" class="gradient-overlay">
+              
+                <img src="https://images.pexels.com/photos/8850721/pexels-photo-8850721.jpeg?auto=compress&cs=tinysrgb&w=400" alt="ticked off answer for multiple choice question">
+                <div class="card-headline">
+                    <div class="headline-backdrop">
+                    <h2>Quizzes</h2>
+                    </div>
+                </div>
+                <div class="card-caption">
+                    <p>Challenge your knowledge with interactive quizzes that make learning fun</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#games" class="gradient-overlay">
+            
+              <img src="https://plus.unsplash.com/premium_photo-1678112183791-498b49242d1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBjJTIwZ2FtaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="child with headset, gaming on his PC">
+            
+              <div class="card-headline">
+                <div class="headline-backdrop">
+                <h2>Games</h2>
+                </div>
+            </div>
+            <div class="card-caption">
+                <p>Unlock new realms of fun while sharpening your strategic thinking</p>
+            </div>
+            </a>
+        </div>
+    </div>
+    <div class="banner-row-two">
+       
+        <div class="card">
+            <a href="#videos" class="gradient-overlay">
+              
+                <img src="https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&w=600" alt="girl watching revision video">
+             
+                <div class="card-headline">
+                    <div class="headline-backdrop">
+                    <h2>Videos</h2>
+                    </div>
+                </div>
+                <div class="card-caption">
+                    <p>Where knowledge comes to life through captivating videos</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#competitions" class="gradient-overlay">
+              
+                <img src="https://images.pexels.com/photos/5212334/pexels-photo-5212334.jpeg?auto=compress&cs=tinysrgb&w=400" alt="boy proudly shows his maths solution on chalkboard">
+             
+                <div class="card-headline">
+                    <div class="headline-backdrop">
+                    <h2>Competitions</h2>
+                    </div>
+                </div>
+                <div class="card-caption">
+                    <p>Showcase your skills on the grand stage and prove you've got what it takes to shine</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#projects" class="gradient-overlay">
+              
+                <img src="https://images.pexels.com/photos/7869040/pexels-photo-7869040.jpeg?auto=compress&cs=tinysrgb&w=600" alt="children with circuit project">
+             
+                <div class="card-headline">
+                    <div class="headline-backdrop">
+                    <h2>Projects</h2>
+                    </div>
+                </div>
+                <div class="card-caption">
+                    <p>Bring your innovative ideas to life through exciting hands-on projects</p>
+                </div>
+            </a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- filter bar -->
+<div class="junior-filter">
+  <div class="filter-by">
+    <p>Filter by</p>
+    <div class="custom-filter">
+        <div class="filters-header">
+            <span>Select categories</span>
+            <i class="fa-solid fa-angle-down fa-sm" style="color: #000000;"></i>
+        </div>
+        <div class="filter-dropdown">
+        <label><input type="checkbox" name="type" value="quizzes"> Quizzes</label>
+        <label><input type="checkbox" name="type" value="games"> Games</label>
+        <label><input type="checkbox" name="type" value="videos"> Videos</label>
+        <label><input type="checkbox" name="type" value="competitions"> Competitions</label>
+        <label><input type="checkbox" name="type" value="projects"> Projects</label>
+        </div>
+    </div>
+  </div>
+</div>
+     <!-- main body/content -->
+   <div class="junior-resources">
+    
+    <div class="quizzes-cards-row" id="quizzes" data-type="quizzes">
+      <h1 class="row-title">Quizzes</h1>
+      <div class="cards-container">
+        <div class="quizzes-card" style="width: 18rem;">
+          <img class="card-img-top" src="https://media.istockphoto.com/id/1156108277/photo/history-of-science-concept-isaac-newton-and-physics.jpg?b=1&s=612x612&w=0&k=20&c=M5j84xwv-7A2Jw7MpvNlM1VQFMxqbyFWS8yHAh6sJkI=" alt="image of Newton">
+          <div class="card-body">
+            <h5 class="card-title">KS2 Science Trivia</h5>
+            <p class="card-text">Test your knowledge on Newton's forces, energy, DNA, human body, and ecosystem</p>
+            <div class="last-card-row">
+              <a href="https://www.sciencefun.org/5th-grade-trivia/" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quizzes-card" style="width: 18rem;">
+          <img class="card-img-top" src="https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&w=600" alt="image of plasma globe">
+          <div class="card-body">
+            <h5 class="card-title">KS3 Science Quizzes</h5>
+            <p class="card-text">Unleash your inner scientist with fun and engaging quizzes on EducationQuizzes</p>
+            <div class="last-card-row">
+            <a href="https://www.educationquizzes.com/ks3/science/" class="btn btn-primary">Explore Here</a>
+            <div class="likes-container">
+              <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                   <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+     
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="quizzes-card" style="width: 18rem;">
+          <img class="card-img-top" src="https://images.pexels.com/photos/6256258/pexels-photo-6256258.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Practical Maths Situations</h5>
+            <p class="card-text">Unlock the excitement of numbers and puzzles with BBC's Teach Math Challenge Quiz</p>
+            <div class="last-card-row">
+            <a href="https://www.bbc.co.uk/teach/school-radio/maths-maths-challenge-quiz-home/zb6dd6f" class="btn btn-primary">Explore Here</a>
+            <div class="likes-container">
+              <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                   <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="quizzes-card" style="width: 18rem;">
+          <img class="card-img-top" src="https://images.pexels.com/photos/6958502/pexels-photo-6958502.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">10-Min Maths Quiz</h5>
+            <p class="card-text">Quick-fire 10 min Maths practice on CGPBooks website. You snooze, you lose!</p>
+            <div class="last-card-row">
+            <a href="https://www.cgpbooks.co.uk/resources/cgp-s-free-online-10-minute-tests/free-ks3-maths-online-10-minute-tests" class="btn btn-primary">Explore Here</a>
+            <div class="likes-container">
+              <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                   <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="games-cards-row" id="games" data-type="games">
+      <h1 class="row-title">Games</h1>
+      <div class="cards-container">
+        <div class="games-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1583484963886-cfe2bff2945f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnV0dXJlJTIwY29kZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="random code">
+            <div class="card-body">
+              <h5 class="card-title">Future Coders</h5>
+              <p class="card-text">Interested in building your own website? AI chat bot? A game? Forums? A diary to post in? Mods for your favourite games? Or an app? Start with these coding games first and progress to higher levels!</p>
+              <div class="last-card-row">
+              <a href="http://www.kidlocoding.com/" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+                
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="games-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1524685794168-52985e79c1f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWluZWNyYWZ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="minecraft character">
+            <div class="card-body">
+              <h5 class="card-title">Minecraft</h5>
+              <p class="card-text">Calling all architecture, engineering and coding enthusiasts- build from harvested materials, create circuits to provide power to the village, and code your world as you'd like it to be!</p><br>
+              <div class="last-card-row">
+              <a href="https://www.minecraft.net/en-us/about-minecraft" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="games-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/5412109/pexels-photo-5412109.jpeg?auto=compress&cs=tinysrgb&w=600" alt="fridge magnet numbers scattered on table">
+            <div class="card-body">
+              <h5 class="card-title">Maths Missions</h5>
+              <p class="card-text">Junior mathematicians, use your problem-solving maths skills to pull these game characters away from their misery and the sticky situations they've caught themselves in before doom strikes</p><br>
+              <div class="last-card-row">
+              <a href="https://www.bbc.co.uk/bitesize/articles/zdjkjfr" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="games-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="white robot">
+            <div class="card-body">
+              <h5 class="card-title">Help the Science Bots</h5>
+              <p class="card-text">Ssshhh! Keep quiet and take your missions. Assist scientist bots from outer Space in completing their top-secret experiments which involve knowledge of Space, Electricity, Forces, Light, and Sound</p>
+              <div class="last-card-row">
+              <a href="https://www.bbc.co.uk/bitesize/topics/z6bqkmn/articles/zwd6nk7" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    
+    <div class="videos-cards-row" id="videos" data-type="videos">
+      <h1 class="row-title">Videos</h1>
+      <div class="cards-container">
+        <div class="videos-card" style="max-width: 18rem;">
+          <iframe width="286.5px" height="auto" class="juniorVid" src="https://www.youtube.com/embed/owHF9iLyxic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://www.youtube.com/watch?v=owHF9iLyxic">Engineering Explained</a></h5>
+              <p class="card-text">Uncover the magic behind buildings, gadgets, electricity, transport, machinery, and all the cool things engineers build and dream of</p>
+            </div><br>
+            <div class="fav-container">
+              <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                   <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+            </div>
+          </div>
+          <div class="videos-card" style="width: 18rem;">
+            <iframe width="286.5px" height="auto" class="juniorVid" src="https://www.youtube.com/embed/g1J4181W8ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://www.youtube.com/watch?v=g1J4181W8ss">Introduction to Coding</a></h5>
+              <p class="card-text">Ever wondered how your favourite games and apps come to life? Dive straight into coding- it's like teaching your computer to talk and do fun tricks!</p>
+            </div><br>
+            <div class="fav-container">
+              <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                   <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+            </div>
+          </div>
+          <div class="videos-card" style="width: 18rem;">
+            <iframe width="286.5px" height="auto" class="juniorVid" src="https://www.youtube.com/embed/QVq5htPY_BA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://youtu.be/QVq5htPY_BA">What is Science?</a></h5>
+              <p class="card-text">A scientist's work is like detective work- there is an answer to everything including nature's greatest mysteries such as the Big Bang </p>
+            </div><br>
+            <div class="fav-container">
+              <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                   <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+            </div>
+          </div>
+          <div class="videos-card" style="width: 18rem;">
+            <iframe width="286.5px" height="auto" class="juniorVid" src="https://www.youtube.com/embed/64643Op6WJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://www.youtube.com/watch?v=64643Op6WJo">Importance of Mathematics</a></h5>
+              <p class="card-text">Knowledge is a superpower! And with Maths, it's all about solving puzzles. Super useful for when you get stuck in a bad situation at the shops!</p>
+            </div>
+            <div class="fav-container">
+              <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                   <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+            </div>
+          </div>
+          </div>
+        </div>
+    
+    <div class="competitions-cards-row" id="competitions" data-type="competitions">
+      <h1 class="row-title">Competitions</h1>
+      <div class="cards-container">
+        <div class="competitions-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/5473951/pexels-photo-5473951.jpeg?auto=compress&cs=tinysrgb&w=600" alt="projecting code on person">
+            <div class="card-body">
+              <h5 class="card-title">CyberCenturion Cybersecurity Challenge </h5>
+              <p class="card-text">Accepting submissions from 12-18 year olds in UK + their overseas territories. Find out your cyber footprint and contribute to a secure digital future!</p>
+              <div class="last-card-row">
+              <a href="https://www.stem.org.uk/secondary/enrichment/competitions/cyber-centurion" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <span class="favourite-count"></span>
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="competitions-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/7476135/pexels-photo-7476135.jpeg?auto=compress&cs=tinysrgb&w=600" alt="young boy in astronaut outfit">
+            <div class="card-body">
+              <h5 class="card-title">Walk to the Moon - UK Space Agency</h5>
+              <p class="card-text">Open to 8-12 year old aspiring astronauts worldwide who are assigned 'space' missions by UK Space Agency (British equivalent of NASA)</p>
+              <div class="last-card-row">
+              <a href="https://trainlikeanastronaut.org/" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="competitions-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/5621937/pexels-photo-5621937.jpeg?auto=compress&cs=tinysrgb&w=600" alt="team writing on whiteboard together">
+            <div class="card-body">
+              <h5 class="card-title">Maths Kangaroo & Olympiad</h5>
+              <p class="card-text">Aimed at 8-14 year olds: challenge yourself and gain new skills working in a team. May wish to enter both challenges if you're up for it</p>
+              <div class="last-card-row">
+              <a href="https://ukmt.org.uk/junior-challenges" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="competitions-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=600" alt="keyboard lit up purple">
+            <div class="card-body">
+              <h5 class="card-title">Oxford Uni Computing - For The Brightest</h5>
+              <p class="card-text">For 8+ years old- solve as many problems you can in 40 minutes (don't need to finish) and compete amongst the top 10% high-performing students</p>
+              <div class="last-card-row">
+              <a href="https://www.bebras.uk/" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+   
+    <div class="projects-cards-row" id="projects" data-type="projects">
+      <h1 class="row-title">Projects</h1>
+      <div class="cards-container">
+        <div class="projects-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=600/" alt="NASA spaceman">
+            <div class="card-body">
+              <h5 class="card-title">To Infinity & Beyond: Solve Earth's Problems</h5>
+              <p class="card-text">Explore Earth and Space on one of NASA's official sites and discover what it means to be an 'astronaut' and extraterristrial creatures if you're lucky </p>
+              <div class="last-card-row">
+              <a href="https://spaceplace.nasa.gov/" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="projects-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/5063442/pexels-photo-5063442.jpeg?auto=compress&cs=tinysrgb&w=600" alt="kids gather around table looking through microscope">
+            <div class="card-body">
+              <h5 class="card-title">Fun Science Experiments- Easy and Safe At Home</h5>
+              <p class="card-text">Have a go at some easy scientific experiments at home! With either your friends, school group, your parents, or independently. Safe to experiment at home</p>
+              <div class="last-card-row">
+              <a href="https://www.funology.com/" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="projects-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/7213504/pexels-photo-7213504.jpeg?auto=compress&cs=tinysrgb&w=600" alt="plans of coding project laid out on chalkboard, in front of girl">
+            <div class="card-body">
+              <h5 class="card-title">'Hello World'- Start Coding Today</h5>
+              <p class="card-text">Start coding today and build projects with code.org for free- open to all beginner and intermediate levels and of all ages!</p><br>
+              <div class="last-card-row">
+              <a href="https://studio.code.org/courses" class="btn btn-primary">Explore Here</a>
+              <div class="likes-container">
+                <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                     <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="projects-card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.pexels.com/photos/7606004/pexels-photo-7606004.jpeg?auto=compress&cs=tinysrgb&w=600" alt="mohter and son holding paper cut-outs of dinosaurs">
+            <div class="card-body">
+              <h5 class="card-title">Get Hands-On With Science At Home</h5>
+              <p class="card-text">Browse by subject and year group to find a project with a selection ranging from zoology to astronomy- there's something for everyone!</p>
+              <div class="last-card-row">
+                  <a href="https://www.sciencebuddies.org/science-fair-projects/science-projects" class="btn btn-primary">Explore Here</a>
+                  <div class="likes-container">
+                    <i class="fa-solid fa-heart fa-xl heart-icon" style="color: #0e65fb;"></i>
+<!--                         <i class="fa-solid fa-bookmark fa-lg" style="color: #0e65fb;"></i> -->
+                  </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+</div>
+
+<script src="https://kit.fontawesome.com/1b7c9c4617.js" crossorigin="anonymous"></script>
+<script src="junior.js"></script>
+
+</body>
+
+
+<!--Anh- Create a footer containing columns and quick access links-->
+<footer>
+	<div class="columns">
+		<div class="column">
+			<!-- Insert logo -->
+			<img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Logo">
+			<!-- Social media icons -->
+			<ul class="social-media">
+				<li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+				<li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+				<li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
+				<li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+			</ul>
+		</div>
+
+		<!-- Company details -->
+		<div class="column">
+			<ul id="company-info">
+				<li>SMAACStem</li><br>
+				<li>Worldwide Organisation - Igniting Curiosity, Fueling Futures: Empowering Youth Through STEM Exploration</li>
+			</ul>
+		</div>
+
+		<!-- Easy access links -->
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="faq.html">Support</a></li>  
+                <li><a href="faq.html">FAQ & Contact</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Settings</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="index.html">About us</a></li>
+				<li><a href="forum.html">Forum</a></li>
+                <li><a href="blog.html">Blogs & News</a></li>
+                <li><a href="sitemap.html">Search</a></li>
+			</ul>
+		</div>
+
+		<!-- Newsletter and search -->
+		<div class="column">
+			<div class="newsletter">
+				<p>Sign up to our newsletter to get the latest STEM updates!</p>
+				<form action="https://formsubmit.co/hiannnguyen@gmail.com" method="POST">
+					<input type="email" name="email" placeholder="Email address" required>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-end">
+		<p>© 2023 SMAACStem Global. All rights reserved.</p>
+		<p><a href="sitemap.html">Sitemap</a></p>
+	  </div>
+</footer>
+    
+
+</html>

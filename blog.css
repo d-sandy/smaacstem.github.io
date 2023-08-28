@@ -1,0 +1,151 @@
+/*Save it as blog.css  */
+@media screen and (max-width: 600px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+  /*Code by Megan*/
+  .blogimage {
+    height:150px;
+    width:240px;
+  }
+  h1 {
+    text-align:center;
+    flex:1;
+    margin-bottom:40px;
+    font-size:40px;
+    font-family:Oswald, sans-serif;
+    margin-top:120px;
+  }
+  h2 { font-family:'Oswald', sans-serif;
+    font-size:25px;
+    text-align:center;
+    width:auto;
+  }
+  
+  .blog {
+    background-color: #020280;
+      color:white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-family: 'Raleway', sans-serif;
+  }
+  
+  .post.one {
+    background-color: #09e836;
+      width:30%;
+    text-align:center;
+  
+  }
+  
+  .post.two {
+    background-color: #53ede0;
+      width:30%;
+    text-align:center;
+  }
+  
+  .post.three {
+    background-color: #d930a9;
+      width:30%;
+    text-align:center;
+  }
+  .posts {
+    text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    color:black;
+  }
+  
+  .blogname {
+    font-size:20px;
+    text-decoration:underline;
+  }
+  .date {
+    font-weight:bold;
+  }
+  
+  .intro {
+    font-size:20px;
+  }
+  
+  .news {
+     background-color: #fff9ed;
+      color:black;
+      text-align: center;
+      padding: 20px;
+      border-radius: 50px;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-family: 'Raleway'
+  }
+  
+  .article.a {
+    background-color:#09e836;
+      width:15%;
+     text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    color:black;
+  }
+  
+  .article.b {
+    background-color:#53ede0;
+      width:15%;
+     text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    color:black;
+  }
+  .article.c {
+    background-color:#d930a9;
+      width:15%;
+     text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    color:black;
+  }
+  
+  .article.d {
+    background-color:#FFDD33;
+      width:15%;
+     text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    color:black;
+  }
+  .article.e {
+    background-color:#f57622;
+      width:15%;
+     text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    color:black;
+  }
