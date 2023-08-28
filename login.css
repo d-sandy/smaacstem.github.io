@@ -40,7 +40,7 @@ body {
 
 }
 .check2{
-  display: inline-block;
+  display: flex;
   margin-top: 15px;
   margin-left: 400px;
   margin-bottom: 100px;
@@ -52,7 +52,7 @@ body {
   margin-left:-50px ;
 }
 .check3{
-  display: inline-block;
+  display: flex;
   margin-left: 450px;
   margin-top: 200px;
   width:10px;
