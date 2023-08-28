@@ -255,7 +255,7 @@ h4 {
 .help {
   padding: 20px;
   margin-left: 275px;
-  display: inline-block;
+  display: flex;
   position: fixed;
 }
 
