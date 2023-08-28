@@ -42,18 +42,18 @@ body {
 .check2{
   display: flex;
   margin-top: 15px;
-  margin-left: 400px;
+  margin-left: 100px;
   margin-bottom: 100px;
 
 }
 .check{
   display: inline-block;
   margin-top: 200px;
-  margin-left:-50px ;
+  margin-left:-150px ;
 }
 .check3{
   display: flex;
-  margin-left: 450px;
+  margin-left: 230px;
   margin-top: 200px;
   width:10px;
 }
@@ -69,7 +69,7 @@ body {
   border-radius: 12px;
   background-color: white;
   height: 600px;
-  width: 600px;
+  width: 500px;
   /* margin: 30px; */
   position: fixed;
   margin-left: 600px;
