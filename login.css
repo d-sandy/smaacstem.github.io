@@ -254,7 +254,7 @@
   }
   .help {
     padding: 20px;
-    /* margin-left: 275px; */
+    margin-left: 275px;
     display: flex;
     position: fixed;
   }
