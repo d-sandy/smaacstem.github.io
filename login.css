@@ -41,7 +41,7 @@ body {
 }
 .check2{
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 400px;
   margin-left: 200px;
   margin-bottom: 100px;
   position:fixed;
@@ -50,13 +50,15 @@ body {
 .check{
   display: inline-block;
   margin-top: 200px;
-  margin-left:-150px ;
+  margin-left:-100px ;
+  position: fixed;
 }
 .check3{
   display: inline-block;
-  margin-left: 250px;
-  margin-top: 200px;
+  margin-left: 300px;
+  margin-top: 400px;
   width:10px;
+  position: fixed;
 }
 
 .logoimage {
