@@ -53,7 +53,7 @@ body {
   margin-left:-150px ;
 }
 .check3{
-  display: flex;
+  display: inline-block;
   margin-left: 250px;
   margin-top: 200px;
   width:10px;
