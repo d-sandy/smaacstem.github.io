@@ -11,20 +11,22 @@
   }
   }
 
-* { 
+/* * { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
   html { zoom: 0.9;
     transform: scale(0.7);
+   
   }
 
 body {
-  min-height: 100vh;
-  width:100%;
+  /* min-height: 100vh; */
+  /* width:100%; */
     /* background-color: papayawhip;  */
-    margin: 0px;
+    /* margin: 0px; */
+      width:90%;margin:auto;min-width:600px;max-width:2000p;
       background: radial-gradient(#432a5a, #360249)  ;
 
 }
@@ -37,6 +39,7 @@ body {
   left: 0px;
   top: 0px;
   bottom: 0px;
+  
 
 }
 .check2{
