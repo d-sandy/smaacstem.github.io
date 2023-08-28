@@ -1,0 +1,186 @@
+<!--save as about.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAACStem About Us</title>
+    <meta name="description" content="About us page. Mission, objectives and a introduction of the team">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <script src="script.js" defer></script>
+    
+    
+
+<!--Code by Sandhiya-->
+    <!-- to show logo icon in website browser tab(run this in is Vs code to see) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+
+<!--Code by Camelia-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    </style>
+
+<!--Code by Anh-->
+    <!--Footer fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://kit.fontawesome.com/1b7c9c4617.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--Code by Sandhiya-->
+<!--Sandhiya- Logo and navigation bar-->
+	<!-- Sandhiya- Navigation bar -->
+	<div class="topnav">
+		<a href="index.html"> <img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Home" width="190" height="100" class="logoimage"></a>
+		<a href="about.html">About us</a>
+		<a href="junior.html">Junior Explorers</a>
+		<a href="explorers.html">Explorers</a>
+		<a href="parents.html">Parents</a>
+		<button id="loginsignupbutton" onclick="window.location.href='login.html'">Login</button>
+		<!-- HTML for search icon in Nav section. Added the search icon image within button element to make search icon an actual search button. -->
+		<div class="searchicon">
+			<!-- search bar - a hidden container -->
+			<input type="text" placeholder="Enter the text here" id="searchtext" class="searchbar" style="display: none;">
+			<!-- search button -->
+			<button id="searchbutton" onclick="hideshow()"><img class="searchiconimg" src="search.png" alt="search" width="45"></button>
+		</div>
+	</div>
+
+<!--Code by Megan- About us page-->
+<div>
+<h1>About Us</h1>
+</div>
+
+<div class="mission">
+    <h2>Our Mission<h2>
+        <p>At SMAAC STEM, we aim to connect people with opportunities in STEM 
+            (science, technology, engineering and mathematics),
+            whether that is directing junior explorers to websites where they can explore their interests, 
+            linking explorers to opportunities in our community tab or providing parents with great ideas 
+            to foster an interest in STEM in their children.<br></p>
+    <h2>Our goal is to:</h2>
+        
+        <ul>
+            <li>Encourage students to improve their STEM <em>skills</em></li>
+            <li><em>Motivate</em> parents and students to explore interests in STEM</li>
+            <li>Connect students to opportunities to achieve their <em>aspirations</em></li>
+            <li>Allow students to improve their <em>analysis</em> skills</li>
+            <li>Provide students with a space to foster their <em>curiosity</em></li>
+        </ul>
+</div>
+
+<div>
+    <h1> Meet the team</h1>
+</div>
+
+<div class="team">
+    <div class="Sandhiya team-member">
+        <h3 class="member-name">Sandhiya</h3>
+        <p class="about">As a Data Analyst I like how STEM helps young people to become better at research and critical thinking.<br><br>
+            In the field of technology and with STEM's project-based and problem-solving learning equips to respond to real-world challenges.<br><br>
+            Lets keep learning with STEM!</p>
+      </div>
+
+      <div class="Megan team-member">
+        <h3 class="member-name">Megan</h3>
+        <p class="about">Science teacher with a degree in Biomedical Science.<br><br>
+            My interests within STEM are coding and biology, specifically neuroscience and cancer research.<br><br>
+            My goal is to connect students to further their STEM knowledge and interests!</p>
+        <link rel="linkedin" href="">
+      </div>
+
+      <div class="Anh team-member">
+        <h3 class="member-name">Anh</h3>
+        <p class="about">Journalism student with past experience as a KS2 Learning Support Assistant where I taught art and creative writing lessons to young children.<br><br>
+            My interest in coding and STEM grew from a need for more challenge. I discovered greater fulfillment in solving coding challenges on codewars and debugging code!<br><br> 
+            And I've started this journey last year.</p>
+    </div>
+
+    <div class="Ana team-member">
+        <h3 class="member-name">Ana</h3>
+        <p class="about">I'm an archaeologist passionate about unlocking past secrets through plants, known as archaeobotany.<br><br>
+            With a PhD bridging humanities and science, I began coding during my studies, using R to uncover prehistorical food mysteries. 
+            Recently, I shifted towards web development, seamlessly blending my expertise into the digital landscape. 
+            I'm driven by diverse interests, exploring plant history and ancient societies, especially the enigmatic prehistoric period.<br><br> 
+            As an avid reader and committed vegan, I'm devoted to unearthing stories from the past while nurturing a sustainable present and future.</p>
+    </div>
+    
+    <div class="Camelia team-member">
+        <h3 class="member-name">Camelia</h3>
+        <p class="about"><p>Applied Behaviour Therapist driven by a love for intellectual challenges. <br><br>
+            My passion lies at the intersection of STEM and behaviour, where I harness the power of technology to create positive impacts. 
+            By fusing behavioural insights with innovative tech solutions, I aspire to contribute to a more inclusive and empowered world. <br><br>
+            Let's embark on a journey where behaviour and technology converge for the greater good!</p>
+    </div>
+</div>
+
+</body>
+
+<!--Anh- Create a footer containing columns and quick access links-->
+<footer>
+	<div class="columns">
+		<div class="column">
+			<!-- Insert logo -->
+			<img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Logo">
+			<!-- Social media icons -->
+			<ul class="social-media">
+				<li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+				<li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+				<li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
+				<li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+			</ul>
+		</div>
+
+		<!-- Company details -->
+		<div class="column">
+			<ul id="company-info">
+				<li>SMAACStem</li><br>
+				<li>Worldwide Organisation - Igniting Curiosity, Fueling Futures: Empowering Youth Through STEM Exploration</li>
+			</ul>
+		</div>
+
+		<!-- Easy access links -->
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="support.html">Support</a></li>  
+                <li><a href="faq.html">FAQ & Contact</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Settings</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<ul class="footer-links">
+				<li><a href="about.html">About us</a></li>
+				<li><a href="forum.html">Forum</a></li>
+                <li><a href="blog.html">Blogs & News</a></li>
+                <li><a href="search.html">Search</a></li>
+			</ul>
+		</div>
+
+		<!-- Newsletter and search -->
+		<div class="column">
+			<div class="newsletter">
+				<p>Sign up to our newsletter to get the latest STEM updates!</p>
+				<form action="https://formsubmit.co/hiannnguyen@gmail.com" method="POST">
+					<input type="email" name="email" placeholder="Email address" required>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-end">
+		<p>© 2023 SMAACStem Global. All rights reserved.</p>
+		<p><a href="sitemap.html">Sitemap</a></p>
+	  </div>
+</footer>
+    
+
+</html>
