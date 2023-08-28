@@ -49,7 +49,7 @@ body {
   display: inline-block;
   width:80px;
   margin-top: 15px;
-  margin-left: 500px;
+  margin-left: 400px;
   margin-bottom: 100px;
 
 }
@@ -76,7 +76,7 @@ body {
   border-radius: 12px;
   background-color: white;
   height: 600px;
-  width: 500px;
+  width: 400px;
   /* margin: 30px; */
   position: fixed;
 /*   margin-left: 600px;
