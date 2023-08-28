@@ -44,10 +44,11 @@ body {
   margin-top: 15px;
   margin-left: 200px;
   margin-bottom: 100px;
+  position:fixed;
 
 }
 .check{
-  display: flex;
+  display: inline-block;
   margin-top: 200px;
   margin-left:-100px ;
 }
