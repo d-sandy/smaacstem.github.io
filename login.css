@@ -1,373 +1,374 @@
 /* Device Screen view */
 @media screen and (max-width: 600px) {
-  html {
-    font-size: 14px; 
+    html {
+      font-size: 14px; 
+    }
   }
-}
-
-@media screen and (max-width: 300px) {
-  html {
-    font-size: 12px;
-  }
-  }
-
-* { 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-  html { zoom: 1.0;
-    transform: scale(0.8);
-  }
-
-body {
-  min-height: 100vh;
-  width:100%;
-    /* background-color: papayawhip;  */
-    margin: 0px;
-      background: radial-gradient(#432a5a, #360249)  ;
-
-}
-.finalcheck {
-  position: fixed;
-  width: 0px;
-  height: 0px;
-  margin: 0px;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-
-}
-.check2{
-  display: inline-block;
-  margin-top: 400px;
-  margin-left: 200px;
-  margin-bottom: 100px;
-  position:fixed;
-
-}
-.check{
-  display: inline-block;
-  margin-top: 200px;
-  margin-left:-100px ;
-  position: fixed;
-}
-.check3{
-  display: inline-block;
-  margin-left: 300px;
-  margin-top: 400px;
-  width:10px;
-  position: fixed;
-}
-
-.logoimage {
-  color: #e7c6f5;
-  position: fixed;
-}
-
-.userloginform{
-  border-style: solid;
-  border-color: rgb(231, 216, 216);
-  border-radius: 12px;
-  background-color: white;
-  height: 600px;
-  width: 500px;
-  /* margin: 30px; */
-  position: fixed;
-  margin-left: 600px;
-  margin-top: -350px;
-}
-.signuplinks {
-  padding: 20px;
-  margin-left: -40px;
-  display: flex;
-  position: fixed;
-}
-.signuplinks a {
-  border-radius: 12px;
-  background: white;
-  background-clip: border-box;
-  color: black;
-  cursor: pointer;
-  font-weight: bolder;
-  font-style: inherit;
-  font-size: 20px;
-  padding: 20px;
-  text-decoration: none;
-  align-items: center;
-  border-style: solid;
-  border-color: rgb(231, 216, 216);
-}
-#signupgmail {
-  /* width: 300px; */
-  margin-top: 16px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 10px 8px;
-  /* display: flex; */
-}
-#signupapple {
-  /* width: 300px; */
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 10px 8px;
-  /* display: flex; */
-}
-
-#signupemail {
-  /* width: 300px; */
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 10px 8px;
-  /* display: flex; */
-}
-
-h1 {
-  color: white;
-  text-align: left;
-  margin: 0px;
-  padding: 10px 0px;
-  font-style: inherit;
-  font-size: 35px;
-}
-.loginheader{
-  position: fixed;
-  margin-top: -200px;
-  margin-left: 70px;
-}
-.loginheader .signupheader p {
-  display: inline;
-  padding: 10px 0px;
-  font-style: inherit;
-  font-size: 25px;
-  color: white;
-
-}
-.signupheader a {
-  display: inline;
-  font-style: inherit;
-  font-size: 25px;
-  color: rgb(38, 131, 185);
-}
-
-.userlogin {
-  /* max-width: 600px; */
-  padding-top: 10px;
-  padding-left: 50px;
-  margin-top: 60px;
-  margin-bottom: 90px;
-  text-align: center;
-  display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  margin-left: -55px;
-  position: relative;
   
-}
-
-.junior {
-  /* max-width: 400px; */
-  padding-left: 40px;
-  display: block;
-  position: absolute;
-}
-#juniorlink,
-#explorerlink,
-#parentlink {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  border-style: solid;
-  border-color: rgb(231, 216, 216);
-  border-radius: 12px;
-  background-color: rgb(250, 243, 243);
-  padding: 5px;
-}
-
-.newuser {
-  color: rgb(49, 12, 214);
-  text-align: left;
-  text-align: left;
-  font-size: 15px;
-}
-.countdown p,
-.parentcountdown p {
-  text-align: left;
-  display: inline;
-}
-
-#displaylogincode,
-#parentdisplaylogincode {
-  margin-left: 180px;
-  margin-right: 10px;
-  font-size: 20px;
-  color: rgb(227, 184, 136);
-  letter-spacing: 3px;
-  background: black;
-}
-
-#timer {
-  color: rgb(122, 120, 118);
-  font-size: 15px;
-}
-#parenttimer {
-  color: rgb(122, 120, 118);
-  font-size: 15px;
-}
-
-h4 {
-  color: rgb(234, 227, 233);
-  text-align: center;
-  font-style: inherit;
-  margin-top: -75px;
-  font-size: 20px;
-}
-
-.userinput,
-.parentinput {
-  position: absolute;
-  z-index: 10;
-  /* margin-top: 50px; */
-  position: fixed;
-}
-
-#juniorloginbutton {
-  font-weight: bolder;
-  font-style: inherit;
-  font-size: 15px;
-  color: white;
-  text-decoration: none;
-}
-#help {
-  color: rgb(39, 39, 121);
-  text-decoration: underline;
-  font-weight: lighter;
-}
-.help {
-  padding: 20px;
-  margin-left: 275px;
-  display: grid;
-  position: fixed;
-}
-
-#helpuserinput,
-#helpparent {
-  color: rgb(39, 39, 121);
-  text-decoration: underline;
-  font-weight: lighter;
-}
-
-.helpuserinput,
-.helpparent {
-  padding: 20px;
-  margin-left: 290px;
-  display: grid;
-}
-.junior input {
-  display: inline;
-  font-size: 25px;
-  color: black;
-  font-weight: bolder;
-  margin-top: 20px;
-  text-align: left;
-  padding: 20px;
-  background-color: rgb(250, 243, 243);
-  border: none;
-  border-radius: 13px;
-  width: 360px;
-}
-.junior label {
-  display: inline;
-  font-size: 25px;
-  color: black;
-  font-weight: bolder;
-  margin-left: -95px;
-  /* margin-top: 50px; */
-  text-align: left;
-  padding: 100px;
-}
-.junior button {
-  background: rgb(8, 47, 105);
-  padding: 15px;
-  margin-left: -50px;
-  border: none;
-  border-radius: 13px;
-}
-.userinput label,
-.parentinput label {
-  display: inline;
-  font-size: 20px;
-  color: black;
-  font-weight: bolder;
-  margin-left: 10px;
-  text-align: left;
-  padding: 40px;
-}
-
-.userinput input,
-.parentinput input {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 45px;
-  background-color: rgb(250, 243, 243);
-  display: block;
-  padding: 8px;
-  border: none;
-  border-radius: 13px;
-  width: 395px;
-  font-size: 16px;
-  font-style: inherit;
-  color: black;
-  padding: 20px 8px;
-}
-
-.userinput button,
-.parentinput button {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  /* margin-right: 5px; */
-  padding: 10px 8px;
-  border: none;
-  border-radius: 13px;
-  background: rgb(8, 47, 105);
-  color: white;
-  cursor: pointer;
-  font-weight: bolder;
-  font-style: inherit;
-  font-size: 15px;
-}
-
-.logincodebutton,
-.parentlogincodebutton {
-  width: 150px;
-  margin-left: 100px;
-}
-.loginbutton,
-.parentloginbutton {
-  width: 100px;
-  margin-left: 30px;
-}
-
-button:hover {
-  background-color: #9fd036;
-  color: rgb(8, 47, 105);
-}
-
-#page1,
-#page2:not(:target),
-#juniorExplorer:not(:target) {
-  visibility: hidden;
-}
-#page1:target,
-#juniorExplorer {
-  visibility: visible;
-}
+  @media screen and (max-width: 300px) {
+    html {
+      font-size: 12px;
+    }
+    }
+  
+  * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    html { zoom: 1.0;
+      transform: scale(0.8);
+    }
+  
+  body {
+    min-height: 100vh;
+    width:100%;
+      /* background-color: papayawhip;  */
+      margin: 0px;
+        background: radial-gradient(#432a5a, #360249)  ;
+  
+  }
+  .finalcheck {
+    position: fixed;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+  
+  }
+  .check2{
+    display: inline-block;
+    margin-top: 400px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    position:fixed;
+  
+  }
+  .check{
+    display: inline-block;
+    margin-top: 200px;
+    margin-left:-100px ;
+    position: fixed;
+  }
+  .check3{
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 400px;
+    width:10px;
+    position: fixed;
+  }
+  
+  .logoimage {
+    color: #e7c6f5;
+    position: fixed;
+  }
+  
+  .userloginform{
+    border-style: solid;
+    border-color: rgb(231, 216, 216);
+    border-radius: 12px;
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    /* margin: 30px; */
+    position: fixed;
+    margin-left: 600px;
+    margin-top: -350px;
+  }
+  .signuplinks {
+    padding: 20px;
+    margin-left: -40px;
+    display: flex;
+    position: fixed;
+  }
+  .signuplinks a {
+    border-radius: 12px;
+    background: white;
+    background-clip: border-box;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    font-style: inherit;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    align-items: center;
+    border-style: solid;
+    border-color: rgb(231, 216, 216);
+  }
+  #signupgmail {
+    /* width: 300px; */
+    margin-top: 16px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 8px;
+    /* display: flex; */
+  }
+  #signupapple {
+    /* width: 300px; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 8px;
+    /* display: flex; */
+  }
+  
+  #signupemail {
+    /* width: 300px; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 8px;
+    /* display: flex; */
+  }
+  
+  h1 {
+    color: white;
+    text-align: left;
+    margin: 0px;
+    padding: 10px 0px;
+    font-style: inherit;
+    font-size: 35px;
+  }
+  .loginheader{
+    position: fixed;
+    margin-top: -200px;
+    margin-left: 70px;
+  }
+  .loginheader .signupheader p {
+    display: inline;
+    padding: 10px 0px;
+    font-style: inherit;
+    font-size: 25px;
+    color: white;
+  
+  }
+  .signupheader a {
+    display: inline;
+    font-style: inherit;
+    font-size: 25px;
+    color: rgb(38, 131, 185);
+  }
+  
+  .userlogin {
+    /* max-width: 600px; */
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-left: -55px;
+    position: relative;
+    
+  }
+  
+  .junior {
+    /* max-width: 400px; */
+    padding-left: 40px;
+    display: block;
+    position: absolute;
+  }
+  #juniorlink,
+  #explorerlink,
+  #parentlink {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-style: solid;
+    border-color: rgb(231, 216, 216);
+    border-radius: 12px;
+    background-color: rgb(250, 243, 243);
+    padding: 5px;
+  }
+  
+  .newuser {
+    color: rgb(49, 12, 214);
+    text-align: left;
+    text-align: left;
+    font-size: 15px;
+  }
+  .countdown p,
+  .parentcountdown p {
+    text-align: left;
+    display: inline;
+  }
+  
+  #displaylogincode,
+  #parentdisplaylogincode {
+    margin-left: 180px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(227, 184, 136);
+    letter-spacing: 3px;
+    background: black;
+  }
+  
+  #timer {
+    color: rgb(122, 120, 118);
+    font-size: 15px;
+  }
+  #parenttimer {
+    color: rgb(122, 120, 118);
+    font-size: 15px;
+  }
+  
+  h4 {
+    color: rgb(234, 227, 233);
+    text-align: center;
+    font-style: inherit;
+    margin-top: -75px;
+    font-size: 20px;
+  }
+  
+  .userinput,
+  .parentinput {
+    position: absolute;
+    z-index: 10;
+    /* margin-top: 50px; */
+    position: fixed;
+  }
+  
+  #juniorloginbutton {
+    font-weight: bolder;
+    font-style: inherit;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  #help {
+    color: rgb(39, 39, 121);
+    text-decoration: underline;
+    font-weight: lighter;
+  }
+  .help {
+    padding: 20px;
+    /* margin-left: 275px; */
+    display: flex;
+    position: fixed;
+  }
+  
+  #helpuserinput,
+  #helpparent {
+    color: rgb(39, 39, 121);
+    text-decoration: underline;
+    font-weight: lighter;
+  }
+  
+  .helpuserinput,
+  .helpparent {
+    padding: 20px;
+    margin-left: 290px;
+    display: grid;
+  }
+  .junior input {
+    display: inline;
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: rgb(250, 243, 243);
+    border: none;
+    border-radius: 13px;
+    width: 360px;
+  }
+  .junior label {
+    display: inline;
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+    margin-left: -95px;
+    /* margin-top: 50px; */
+    text-align: left;
+    padding: 100px;
+  }
+  .junior button {
+    background: rgb(8, 47, 105);
+    padding: 15px;
+    margin-left: -50px;
+    border: none;
+    border-radius: 13px;
+  }
+  .userinput label,
+  .parentinput label {
+    display: inline;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    margin-left: 10px;
+    text-align: left;
+    padding: 40px;
+  }
+  
+  .userinput input,
+  .parentinput input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    background-color: rgb(250, 243, 243);
+    display: block;
+    padding: 8px;
+    border: none;
+    border-radius: 13px;
+    width: 395px;
+    font-size: 16px;
+    font-style: inherit;
+    color: black;
+    padding: 20px 8px;
+  }
+  
+  .userinput button,
+  .parentinput button {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    /* margin-right: 5px; */
+    padding: 10px 8px;
+    border: none;
+    border-radius: 13px;
+    background: rgb(8, 47, 105);
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    font-style: inherit;
+    font-size: 15px;
+  }
+  
+  .logincodebutton,
+  .parentlogincodebutton {
+    width: 150px;
+    margin-left: 100px;
+  }
+  .loginbutton,
+  .parentloginbutton {
+    width: 100px;
+    margin-left: 30px;
+  }
+  
+  button:hover {
+    background-color: #9fd036;
+    color: rgb(8, 47, 105);
+  }
+  
+  #page1,
+  #page2:not(:target),
+  #juniorExplorer:not(:target) {
+    visibility: hidden;
+  }
+  #page1:target,
+  #juniorExplorer {
+    visibility: visible;
+  }
+  
