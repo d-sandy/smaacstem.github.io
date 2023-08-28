@@ -2,8 +2,8 @@
 @media screen and (max-width: 600px) {
   html {
     font-size: 14px;
-    zoom: 0.8;
-    transform: scale(0.5);
+    zoom: 0.9;
+    transform: scale(0.7);
 
     
   }
@@ -12,8 +12,8 @@
 @media screen and (max-width: 300px) {
   html {
     font-size: 12px;
-    zoom: 0.8;
-    transform: scale(0.5);
+    zoom: 0.9;
+    transform: scale(0.7);
   }
   }
 
@@ -35,7 +35,6 @@ body {
 }
 .finalcheck {
   position: fixed;
-  /* margin: 100px 100px 100px 150px; */
   width: 0px;
   height: 0px;
   margin: 0px;
@@ -47,9 +46,8 @@ body {
 }
 .check2{
   display: inline-block;
-  width:80px;
   margin-top: 15px;
-  margin-left: 400px;
+  margin-left: 500px;
   margin-bottom: 100px;
 
 }
@@ -76,7 +74,7 @@ body {
   border-radius: 12px;
   background-color: white;
   height: 600px;
-  width: 400px;
+  width: 500px;
   /* margin: 30px; */
   position: fixed;
   margin-left: 600px;
