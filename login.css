@@ -2,7 +2,7 @@
 @media screen and (max-width: 600px) {
   html {
     font-size: 16px;
-    zoom: 0.9;
+    zoom: 1.0;
     transform: scale(0.9);
 
     
@@ -12,7 +12,7 @@
 @media screen and (max-width: 300px) {
   html {
     font-size: 13px;
-    zoom: 0.9;
+    zoom: 1.0;
     transform: scale(0.9);
   }
   }
