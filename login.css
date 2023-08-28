@@ -12,19 +12,25 @@
   }
 }
 
- /* html {
-  zoom: 0.85;
-  transform: scale(0.95);
-  zoom: 100%;
-
-}  */
-body {
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ html {
   background: radial-gradient(#432a5a, #360249)  ;
+} 
+body {
+  min-height: 100vh;
+    /* max-width: 400px; */
+    /* background-color: papayawhip;  */
+    margin: 0 auto;
 
 }
 .finalcheck {
   width: 900px;
   position: fixed;
+  margin: 100px 100px 100px 150px;
 }
 .check2{
   float: right;
