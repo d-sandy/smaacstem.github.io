@@ -40,7 +40,7 @@ body {
 
 }
 .check2{
-  display: flex;
+  display: inline-block;
   margin-top: 15px;
   margin-left: 100px;
   margin-bottom: 100px;
