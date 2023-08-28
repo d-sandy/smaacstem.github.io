@@ -1,8 +1,8 @@
 /* Device Screen view */
 @media screen and (max-width: 600px) {
   html {
-    font-size: 16px;
-    zoom: 1.0;
+    font-size: 14px;
+    zoom: 0.9;
     transform: scale(0.7);
 
     
@@ -11,8 +11,8 @@
 
 @media screen and (max-width: 300px) {
   html {
-    font-size: 13px;
-    zoom: 1.0;
+    font-size: 12px;
+    zoom: 0.9;
     transform: scale(0.7);
   }
   }
@@ -56,7 +56,7 @@ body {
 .check{
   display: inline-block;
   margin-top: 200px;
-  margin-left:50px ;
+  margin-left:90px ;
 }
 .check3{
   display: inline-block;
@@ -75,8 +75,8 @@ body {
   border-color: rgb(231, 216, 216);
   border-radius: 12px;
   background-color: white;
-  height: 800px;
-  width: 1000px;
+  height: 600px;
+  width: 500px;
   /* margin: 30px; */
   position: fixed;
   margin-left: 600px;
