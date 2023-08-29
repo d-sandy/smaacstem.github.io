@@ -123,12 +123,12 @@ footer a {
 /* desktop media query (footer) */
 
 @media screen and (min-width: 768px) {
-  .columns {
+  .col-md-3 {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .column {
+  .col-md-3 {
     flex-basis: 14%;
     /* Ana Adjust this value to control column width */
     margin-right: 10px;
@@ -136,7 +136,7 @@ footer a {
   }
 
   /* Increase flex-basis for the last column ana add this*/
-  .column:last-child {
+  .col-md-3:last-child {
     flex-basis: 30%;
     /* Adjust this value to make the last column bigger */
   }
