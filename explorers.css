@@ -312,4 +312,6 @@ button.btn {
         /* Adjust margin as needed */
     }
 }
- 
+ .column{
+     max-width:250px;
+ }
