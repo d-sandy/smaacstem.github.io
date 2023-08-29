@@ -2,6 +2,35 @@
 <html lang="en">
 
 <head>
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("footerdyn");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("footerdyn");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SMAACStem Explorers</title>
@@ -373,67 +402,10 @@
 
   <script src="explorers.js"></script>
 </body>
-
-<br>
 <!--Anh- Create a footer containing columns and quick access links-->
-<!--Anh- Create a footer containing columns and quick access links-->
-<footer>
-	<div class="columns">
-		<div class="column">
-			<!-- Insert logo -->
-			<img src="https://pbs.twimg.com/media/F3ppZ3-XAAEETen?format=png&name=240x240" alt="Logo">
-			<!-- Social media icons -->
-			<ul class="social-media">
-				<li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-				<li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
-				<li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
-				<li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
-			</ul>
-		</div>
-
-		<!-- Company details -->
-		<div class="column">
-			<ul id="company-info">
-				<li>SMAACStem</li><br>
-				<li>Worldwide Organisation - Igniting Curiosity, Fueling Futures: Empowering Youth Through STEM Exploration</li>
-			</ul>
-		</div>
-
-		<!-- Easy access links -->
-		<div class="column">
-			<ul class="footer-links">
-				<li><a href="faq.html">Support</a></li>  
-                <li><a href="faq.html">FAQ & Contact</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-                <li><a href="privacy.html">Privacy Settings</a></li>
-			</ul>
-		</div>
-
-		<div class="column">
-			<ul class="footer-links">
-				<li><a href="about.html">About us</a></li>
-				<li><a href="forum.html">Forum</a></li>
-                <li><a href="blog.html">Blogs & News</a></li>
-                <li><a href="search.html">Search</a></li>
-			</ul>
-		</div>
-
-		<!-- Newsletter and search -->
-		<div class="column">
-			<div class="newsletter">
-				<p>Sign up to our newsletter to get the latest STEM updates!</p>
-				<form action="https://formsubmit.co/hiannnguyen@gmail.com" method="POST">
-					<input type="email" name="email" placeholder="Email address" required>
-					<button type="submit">Subscribe</button>
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<div class="footer-end">
-		<p>© 2023 SMAACStem Global. All rights reserved.</p>
-		<p><a href="sitemap.html">Sitemap</a></p>
-	  </div>
-</footer>
+<div footerdyn="./footer.html"></div>
+<script>
+  includeHTML();
+</script>
 
 </html>
