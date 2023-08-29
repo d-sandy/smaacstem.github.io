@@ -294,7 +294,7 @@ button.btn {
     .webdiv .cards-container,
     .peoplediv .cards-container,
     .eventsdiv .cards-container {
-        width: calc(25% - 20px); */
+        width: calc(25% - 20px); 
         /* 25% to fit 4 cards in a row, minus margin */
          margin: 10px;
     }
