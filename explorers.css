@@ -301,7 +301,7 @@ button.btn {
 }
 
 /* For screens with a width less than 992px (tablets and smaller) */
-@media (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
 
     .webdiv .cards-container,
     .peoplediv .cards-container,
