@@ -1,0 +1,62 @@
+/* search.html CSS that is also used in results.html
+ */
+
+ .search-backdrop {
+    background-color: navy;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  
+  .search-backdrop h1 {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  
+  
+  /* results.html */
+  
+  .grid-of-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .grid-of-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .grid-of-images figure {
+    margin: 50px;
+    text-align: center;
+    background-color: lightgrey;
+  }
+  
+  .grid-of-images img {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  
+  .grid-of-images figcaption {
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+  }
+  
+  .grid-of-images p {
+    padding: 15px;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .grid-of-images button {
+    background-color: navy;
+    color: white;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
