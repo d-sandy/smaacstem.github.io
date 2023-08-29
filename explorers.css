@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Banner */
 .bannerexp {
     width: auto;
@@ -25,6 +26,7 @@
     font-weight: 800;
     line-height: 1.43;
 }
+
 /* Buttons and filters */
 .dashexpl {
     display: flex;
@@ -38,7 +40,8 @@
     margin: 0 auto;
     margin-top: 30px;
 }
-.bticon{
+
+.bticon {
     width: 100px;
     height: 50px;
     border-radius: 50px;
@@ -52,11 +55,13 @@
     align-items: center;
     justify-content: center;
 }
-.bticon:hover{
+
+.bticon:hover {
     background-color: #f57622;
 }
+
 .btnotes,
-.btnfav{
+.btnfav {
     width: 250px;
     height: 50px;
     border-radius: 30px;
@@ -74,6 +79,7 @@
     align-items: center;
     justify-content: center;
 }
+
 /* Drop down button and content */
 .dropbtn {
     background-color: #4ba46e;
@@ -99,7 +105,7 @@
     display: none;
     position: absolute;
     min-width: 130px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     width: 230px;
     border-radius: 10px;
@@ -130,8 +136,10 @@
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .btnotes:hover,
-.btnfav:hover,.dropbtn:focus {
+.dropbtn:hover,
+.btnotes:hover,
+.btnfav:hover,
+.dropbtn:focus {
     transform: scale(1.1);
 }
 
@@ -155,10 +163,10 @@
     background-position: 10px center;
     background-repeat: no-repeat;
     font-size: 18px;
-    padding: 12px 20px 12px 40px; 
+    padding: 12px 20px 12px 40px;
     border-radius: 10px;
-    border: 1px solid #ccc; 
-    width: 90%; 
+    border: 1px solid #ccc;
+    width: 90%;
     margin-bottom: 10px;
 }
 
@@ -183,51 +191,74 @@
     font-weight: 600;
     margin-left: 5%;
     margin-bottom: 1%;
-    margin-top: 5%;
+    margin-top: 2%;
     text-align: center;
 }
+
 /* Cards */
 /* Flex layout for rows */
-/* .row {
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    max-width: 150px;
+    /* add left margin */
+}
+
+/* Style the counter cards */
+
+.last-card-row {
+    margin: 3%;
+}
+
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 20px 5%;
-    gap: 5px;
-} */
-.column {
-    flex: 1;
-    max-width: 250px;/* add left margin */
-}
-/* Style the counter cards */
-.cardexp {
-    text-align: center;
-    /* border:solid #ccc; */
-    padding: 10px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    background-color: #f1f1f1;
-    margin-top: 20px;
-    margin-left: 55px;
-    justify-content: space-between;
-    display: flex;
-}
-.card {
-    margin: 10px;
-    position: relative;
-    display: flex;
-    width: 100%;
-}
-.card-img-top {
-    width: 200px;
-    height: 200px;
-}
-.card-body {
-    padding: 20px;
-    flex-grow: 1;/* Allow the card content to stretch to fill the card */
-    padding: 10px;
+    margin-left: 2%;
 }
 
-/* .card-caption {
+.card {
+    width: calc(25% - 20px);
+    margin: 5px;
+    position: relative;
+
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #D9D9D9;
+    /* flex-grow: 1;
+    Allow the card content to stretch to fill the card */
+}
+
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-img-top {
+    height: 210px;
+}
+
+
+.last-card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+button.btn {
+    margin-top: auto;
+}
+
+.card-caption {
     position: absolute;
     top: 65%;
     left: 20px;
@@ -238,11 +269,12 @@
     text-shadow: 1px 1px black;
     font-size: 20px;
     z-index: 2;
-} */
+}
+
 .iconleft {
+    position: relative;
     text-align: right;
-    margin-top: 10px;
-    gap: 20px;
+    padding: 20px;
 }
 
 .fa-heart {
@@ -255,33 +287,28 @@
     color: red !important;
 }
 
-.fa-heart.blue {
-    color: lightblue !important;
+
+/* For screens with a width of 992px and above */
+@media (min-width: 992px) {
+
+    .webdiv .cards-container,
+    .peoplediv .cards-container,
+    .eventsdiv .cards-container {
+        width: calc(25% - 20px);
+        /* 25% to fit 4 cards in a row, minus margin */
+        margin: 10px;
+    }
 }
 
+/* For screens with a width less than 992px (tablets and smaller) */
+@media (max-width: 991.98px) {
 
-/* h3 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-p {
-    display: block;
-    font-size: 1rem;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-} */
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-    .column {
-        flex: 0 0 calc(50% - 20px);
+    .webdiv .cards-container,
+    .peoplediv .cards-container,
+    .eventsdiv .cards-container {
+        width: 100%;
+        /* Full width for single column layout */
+        margin: 10px 0;
+        /* Adjust margin as needed */
     }
 }
