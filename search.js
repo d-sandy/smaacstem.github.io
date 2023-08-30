@@ -1,3 +1,5 @@
+// save as search.js
+// Code by Anh
 //resources arr
 const resources = [
     {
@@ -38,31 +40,43 @@ const resources = [
     }
   ]
   
-  
-  // search function
-  function performSearch() {
-    //case-sensitive so have to make search queries lowercase 
-    let searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
-  
-    const filteredResources = resources.filter(resource => resource.name.includes(searchQuery));
-  
-    window.location.href = `results.html?q=${encodeURIComponent(searchQuery)}`
-  
-    renderResources(filteredResources);
-  }
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    let submitSearch = document.querySelector('.search-btn');
-    let searchInput = document.querySelector('.searchLine-container input[type="text"]');
-    
-    submitSearch.addEventListener('click', performSearch);
-    searchInput.addEventListener('keypress', function (e) {
-      if (e.key === 'Enter') {
+  //   Camelia- updated search function
+document.querySelector('.search-btn').addEventListener('click', performSearch);
+document.querySelector('.searchLine-container input[type="text"]').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
         performSearch();
-      }
-    });
-})
+    }
+});
+
+function performSearch() {
+    let searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
+    const filteredResources = resources.filter(resource => resource.name.toLowerCase().includes(searchQuery));
+    renderResources(filteredResources);
+}
+  // search function
+//   function performSearch() {
+    //case-sensitive so have to make search queries lowercase 
+//     let searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
+  
+//     const filteredResources = resources.filter(resource => resource.name.includes(searchQuery));
+  
+//     window.location.href = `results.html?q=${encodeURIComponent(searchQuery)}`
+  
+//     renderResources(filteredResources);
+//   }
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     let submitSearch = document.querySelector('.search-btn');
+//     let searchInput = document.querySelector('.searchLine-container input[type="text"]');
+    
+//     submitSearch.addEventListener('click', performSearch);
+//     searchInput.addEventListener('keypress', function (e) {
+//       if (e.key === 'Enter') {
+//         performSearch();
+//       }
+//     });
+// })
   
   function renderResources(resourcesList, targetElementId="search-results") {
     const targetElement = document.getElementById(targetElementId);
